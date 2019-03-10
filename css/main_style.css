@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+	/* Webフォント読み込み */
+@font-face {
+	font-family: PixelMplus10-Regular;
+	src: url('../font/PixelMplus12-Regular.ttf') format("truetype");
+}
+body {
+	background:#000;
+	font-family: PixelMplus10-Regular;
+}
+#wrapper {
+	margin:0 auto;
+	width:980px;
+	color:#fff;
+}
+#wrapper_inside {
+	padding:0 50px;
+}
+.inner {
+	width:630px;
+	float:right;
+}
+nav {
+	font-size:20px;
+	font-family: PixelMplus10-Regular;
+	color:#fff;
+	float:left;
+	display:block;
+	width:200px;
+	border:solid #fff 5px;
+	clear:both;
+	margin:40px 0 0;
+}
+p {
+	line-height:1.5;
+}
+li {
+	padding:0 20px;
+	margin:20px 0;
+}
+a {
+	text-decoration:none;
+	color:#fff;
+}
+
+.this_page {
+	color:#CC0003;
+}
+#main_title {
+	width:200px;
+	height:150px;
+	box-sizing:border-box;
+	display:block;
+	float:left;
+	color:#FE0004;
+	font-size:40px;
+	text-align:center;
+}
+#comment_form {
+	margin:15px;
+}
+footer {
+	clear:both;
+	text-align:right;
+	margin:8px 0 20px;
+	}
+	#title {
+		display:block;
+		float:left;
+	}
+#main_title>p {
+	font-size:15px;
+	color:#fff;
+	text-align:center;
+	padding:0;
+}
+#main_title {
+	padding:0 0 0 5px;
+}

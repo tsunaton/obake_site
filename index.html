@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>卒業制作</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/main_style.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.classyled.min.js"></script>
+<script type="text/javascript" src="js/raphael.js"></script>
+        <style>
+            .autosize {
+                font-size: 0;
+            }
+            .led1 {
+                background-color: #333;
+            }
+        </style>
+
+</head>
+
+<body>
+<div id="wrapper">
+<div id="wrapper_inside">
+
+<div id="title">
+<p>おばけ<br>れんめい<br><span>monster's congrass</span></p>
+<nav>
+  <ul id="ul" class="cf">
+    <li>ようこそ</li>
+    <li>なかま</li>
+    <li>おしらせ</li>
+    <li>とうろく</li>
+    <li>あくせす</li>
+  </ul>
+</nav>
+</div>
+
+<div class="inner">
+
+                            <div class="col-md-6">
+                                    <div class="led1 autosize"></div>
+                                    <script>
+                                        $(document).ready(function() {
+                                            $('.led1').ClassyLED({
+                                                type: 'countdown',
+                                                format: 'ddd:hh:mm:ss',
+                                                hourFormat: 12,
+                                                color: '#fff',
+                                                backgroundColor: '#000',
+                                                rounded: 0,
+                                                fontType: 2,
+                                                size: 3
+                                            });
+                                        });
+                                    </script>
+                                </div>
+<style>
+    .led1 {
+	background:#000000;
+	}
+</style>
+</div>
+</div>
+</div>
+</body>
+</html>

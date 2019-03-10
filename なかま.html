@@ -1,0 +1,230 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>おばけゆにおんJAPAN_なかま</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/main_style.css" rel="stylesheet" type="text/css">
+<link href="css/style5.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function() {
+    //クリックしたときのファンクションをまとめて指定
+    $('.tab li').click(function() {
+        //.index()を使いクリックされたタブが何番目かを調べ、
+        //indexという変数に代入します。
+        var index = $('.tab li').index(this);
+        //コンテンツを一度すべて非表示にし、
+        $('.content li').css('display','none');
+        //クリックされたタブと同じ順番のコンテンツを表示します。
+        $('.content li').eq(index).css('display','block');
+        //一度タブについているクラスselectを消し、
+        $('.tab li').removeClass('select');
+        //クリックされたタブのみにクラスselectをつけます。
+        $(this).addClass('select')
+    });
+});
+</script>
+<!-- ソート機能用のスクリプト読み込み -->
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	// Instantiate MixItUp:
+	$('#Container').mixItUp();
+});
+</script>
+
+<script>
+function sound()
+{
+	// [ID:sound-file]の音声ファイルを再生[play()]する
+	document.getElementById( 'sound-file' ).play() ;
+	// 音声ファイルを巻き戻す(再生位置[秒]を0に設定する)
+document.getElementById( 'sound-file' ).currentTime = 0 ;
+}
+</script>
+
+<script>
+function sound2()
+{
+	// [ID:sound-file]の音声ファイルを再生[play()]する
+	document.getElementById( 'sound-file2' ).play() ;
+	// 音声ファイルを巻き戻す(再生位置[秒]を0に設定する)
+document.getElementById( 'sound-file2' ).currentTime = 0 ;
+}
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88578713-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+
+<body>
+<div id="wrapper">
+<div id="wrapper_inside">
+
+  <div id="title">
+<h2 id="main_title">
+  <img src="img/title.png" width="200" height="150" alt=""/> <p>おばけゆにおんJAPAN</p></h2>
+<nav>
+  <ul id="ul" class="cf">
+    <li><a onClick="sound()" href="index.html">とっぷ</a></li>
+    <li><a onClick="sound()" href="ようこそ.html">ようこそ</a></li>
+    <li><a onClick="sound()" class="this_page"　href="なかま.html">なかま</a></li>
+    <li><a onClick="sound()" href="おしらせ.html">おしらせ</a></li>
+    <li><a onClick="sound()" href="けいじばん.html"> けいじばん</a></li>
+    <li><a onClick="sound()" href="こんたくと.html">こんたくと</a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="inner">
+
+<ul class="tab">
+ <a onClick="sound2()"><li class="chbtn">ちず</li></a>
+ <a onClick="sound2()"><li class="chbtn">なまえ</li></a>
+<a onClick="sound2()"> <li class="chbtn">とくちょう</li></a>
+</ul>
+
+<ul class="content cf">
+
+	<li id="map">
+    <p class="setumei">ポインターをクリックすることで、近くに住んでいるなかまを探せます。</p>
+<a onClick="sound()"><img id="img1" class="filter m" data-filter=".am" src="img/pointer.png" width="37" height="32" alt=""/></a>
+<a onClick="sound()"><img id="img2" class="filter m" data-filter=".na" src="img/pointer.png" width="37" height="32" alt=""/></a>
+<a onClick="sound()"><img id="img3" class="filter m" data-filter=".eu" src="img/pointer.png" width="37" height="32" alt=""/></a>
+<a onClick="sound()"><img id="img4" class="filter m" data-filter=".as" src="img/pointer.png" width="37" height="32" alt=""/></a>
+<a onClick="sound()"><img id="img5" class="filter m" data-filter=".af" src="img/pointer.png" width="37" height="32" alt=""/></a>
+       </li>
+
+ <li class="hide">
+<a onClick="sound()"><div class="filter k u1" data-filter=".category-1"><p>あ</p></div></a>
+<a onClick="sound()"><div class="filter k u2" data-filter=".category-2"><p>か</p></div></a>
+<a onClick="sound()"><div class="filter k u3" data-filter=".category-3"><p>さ</p></div></a>
+<a onClick="sound()"><div class="filter k u4" data-filter=".category-4"><p>た</p></div></a>
+<a onClick="sound()"><div class="filter k u5" data-filter=".category-5"><p>な</p></div></a>
+<a onClick="sound()"><div class="filter k u6" data-filter=".category-6"><p>は</p></div></a>
+<a onClick="sound()"><div class="filter k u7" data-filter=".category-7"><p>ま</p></div></a>
+<a onClick="sound()"><div class="filter k u8" data-filter=".category-8"><p>や</p></div></a>
+<a onClick="sound()"><div class="filter k u9" data-filter=".category-9"><p>ら</p></div></a>
+<a onClick="sound()"><div class="filter k u10" data-filter=".category-10"><p>わ</p></div></a>
+<a onClick="sound()"><div class="filter k2 u11" data-filter="all"><p id="all">ぜんいん</p></div></a>
+</li>
+
+ <li class="hide">
+<a onClick="sound()"><div class="filter t y1" data-filter=".a">血をのむ</div></a>
+<a onClick="sound()"><div class="filter t2 y2" data-filter=".b">ちからがつよい</div></a>
+<a onClick="sound()"><div class="filter t y3" data-filter=".c">みずがすき</div></a>
+<a onClick="sound()"><div class="filter t2 y4" data-filter=".d">そらをとぶ</div></a>
+<a onClick="sound()"><div class="filter t y5" data-filter=".e">U180</div></a>
+<a onClick="sound()"><div class="filter t2 y6" data-filter=".f">2000歳以上</div></a>
+ </li>
+ 
+</ul>
+
+<div id="Container">
+<div class="mix category-1 f as" >
+		<img  class="pa" src="img/azukiarai.png" width="150" height="200" alt=""/>
+     <br><br>小豆洗い</div>
+<div class="mix category-1 f af" >
+		<img  class="pa" src="img/asuwann_asia.png" width="150" height="200" alt=""/>
+    <br><br>アスワン</div>
+    
+<div class="mix category-2 b d as" >
+		<img  class="pa" src="img/kasabake.png" width="150" height="200" alt=""/>
+        <br><br>かさばけ</div>
+
+<div class="mix category-2 b af" >
+		<img  class="pa" src="img/kanimaou.png" width="150" height="200" alt=""/>
+       <br><br>かに魔王 </div>
+
+<div class="mix category-2 b eu" >
+		<img  class="pa" src="img/kubinasikisi.png" width="150" height="200" alt=""/>
+        <br><br>首無し騎士</div>
+        
+        <div class="mix category-2 b eu" >
+		<img  class="pa" src="img/keruberosu.png" width="150" height="200" alt=""/>
+        <br><br>ケルベロス</div>
+        <div class="mix category-2 e eu" >
+		<img  class="pa" src="img/gogon.png" width="150" height="200" alt=""/>
+        <br><br>ゴーゴン</div>
+<div class="mix category-3 b na" >
+		<img  class="pa" src="img/saksaotoko.png" width="150" height="200" alt=""/>
+        <br><br>さくさおとこ</div>
+
+<div class="mix category-3 b na" >
+		<img  class="pa" src="img/sassi.png" width="150" height="200" alt=""/>
+        <br><br>サッシー</div>
+        <div class="mix category-3 e as" >
+		<img  class="pa" src="img/jami.png" width="150" height="200" alt=""/>
+        <br><br>じゃみ</div>
+
+<div class="mix category-3 d as" >
+		<img  class="pa" src="img/soranaki_asia.png" width="150" height="200" alt=""/>
+        <br><br>そらなき</div>
+        <div class="mix category-3 b am" >
+		<img  class="pa" src="img/zonnbi.png" width="150" height="200" alt=""/>
+        <br><br>ゾンビ</div>
+
+        <div class="mix category-4 a af" >
+		<img  class="pa" src="img/tyupakabura.png" width="150" height="200" alt=""/>
+        <br><br>チュパカブラ</div>
+<div class="mix category-4 d am" >
+		<img class="pa" src="img/debiru_ousyuu.png" width="150" height="200" alt=""/>
+        <br><br>デビル</div>
+<div class="mix category-4 e eu">
+		<img class="pa" src="img/tomuteblue_hokuou.png" width="150" height="200" alt=""/>
+        <br><br>トムテ（青）</div>
+<div class="mix category-4 e eu">
+		<img class="pa" src="img/tomutered_hokuou.png" width="150" height="200" alt=""/>
+        <br><br>トムテ（赤）</div>
+<div class="mix category-4 e eu">
+		<img class="pa" src="img/tomuteyellow_hokuou.png" width="150" height="200" alt=""/>
+        <br><br>トムテ（黄）</div>
+
+<div class="mix category-5 e na" >
+		<img  class="pa" src="img/ninngyo.png" width="150" height="200" alt=""/>
+        <br><br>人魚</div>
+<div class="mix category-5 f as" >
+		<img  class="pa" src="img/nopperabou.png" width="150" height="200" alt=""/>
+        <br><br>のっぺらぼう</div>
+        <div class="mix category-6 a eu" >
+		<img  class="pa" src="img/bannpaia.png" width="150" height="200" alt=""/>
+       <br><br>バンパイア</div>
+
+<div class="mix category-9 e af" >
+		<img  class="pa" src="img/resi_rosia.png" width="150" height="200" alt=""/>
+      <br><br>レーシィ</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<audio id="sound-file" preload="auto">
+	<source src="sound/jump.wav" type="audio/wav">
+</audio>
+
+<audio id="sound-file2" preload="auto">
+	<source src="sound/change.wav" type="audio/wav">
+</audio>
+
+<audio preload="auto" autoplay loop>
+<source src="sound/nakama.wav">
+</audio>
+
+</body>
+				</html>

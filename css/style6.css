@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+header h1 {
+	font-weight: nomal;
+	font-size: 20px;
+	color:#fff;
+	padding:7px;
+}
+header {
+	position:relative;
+}
+#matsu-l {
+	position: absolute;
+	top:10px;
+	left:100px;
+}
+#contact h1 {
+	font-weight: bold;
+	font-size: 24px;
+	border-bottom: 1px solid #686868;
+	margin:20px 0 10px;
+	color:#fff;
+}
+#contact table th    {
+	text-align: right;
+	vertical-align:top;
+}
+#contact table th , #contact table td {
+	border-top: 1px solid #fff;
+	padding:10px;
+	border-left: 1px solid #fff;
+}
+#contact {
+	margin: 0 0 20px;
+}
+footer {
+	padding: 10px;
+	background-color: #fff;
+}
+#contact table {
+	border-bottom: 1px solid #DEDEDE;
+	border-right: 1px solid #DEDEDE;
+}
+#thanks h1 {
+	text-align:center;
+	font-size:24px;
+    color:#fff;
+	padding:100px 0 0;
+}
+.color-red,.error {
+	color:#FA0004;
+}
+#float_right {
+	display:block;
+	float:right;
+	width:200px;
+	padding:57px 0 0;
+	color:#fff;
+	text-align:right;
+}
+.complete_sentence {
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+}
+th {
+	color:#fff;
+}
